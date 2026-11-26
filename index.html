@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090f">
+  <title>Streamly | Your Video Space</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="#" class="brand">
+      <span class="brand-icon">▶</span>
+      <span>streamly</span>
+    </a>
+
+    <div class="search-box">
+      <span>⌕</span>
+      <input id="searchInput" type="search" placeholder="Search recent videos...">
+    </div>
+
+    <span class="top-label">YOUR VIDEO SPACE</span>
+  </header>
+
+  <main class="layout">
+    <section class="main-content">
+      <div class="welcome">
+        <span class="eyebrow">YOUR PERSONAL VIDEO HUB</span>
+        <h1>Videos you love.<br><span>All in one place.</span></h1>
+        <p>Paste a YouTube link and start watching.</p>
+      </div>
+
+      <form id="videoForm" class="link-form">
+        <div class="link-input">
+          <span>↗</span>
+          <input
+            id="videoInput"
+            type="url"
+            placeholder="Paste a YouTube video URL..."
+            autocomplete="url"
+            required
+          >
+        </div>
+        <button id="addVideoBtn" type="submit">Watch video <span>→</span></button>
+      </form>
+
+      <section class="player-section">
+        <div class="section-heading">
+          <h2>Now playing</h2>
+          <span class="live-dot"></span>
+          <span class="muted">VIDEO PLAYER</span>
+        </div>
+
+        <div id="playerContainer" class="player-container">
+          <div class="empty-player">
+            <div class="empty-orb">▶</div>
+            <h3>Your next favorite video starts here</h3>
+            <p>Paste a YouTube link above to get started.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <span class="eyebrow">MADE FOR YOUR WATCHLIST</span>
+        <h2>Your videos, your space.</h2>
+        <p>Add videos from YouTube and revisit them from your recent history.</p>
+      </section>
+    </section>
+    
+<section id="videoDetails" class="video-details">
+  <h2 id="videoTitle">Video title will appear here</h2>
+  <p id="videoChannel"></p>
+  <p id="videoStats"></p>
+
+  <div class="description-box">
+    <h3>Description</h3>
+    <p id="videoDescription">Paste a YouTube link to load details.</p>
+  </div>
+</section>
+
+<section class="comments-section">
+  <h2>Comments <span id="commentsCount"></span></h2>
+  <div id="commentsContainer">
+    <p>Comments will appear here.</p>
+  </div>
+</section>
+
+
+    <aside class="sidebar">
+      <div class="sidebar-heading">
+        <div>
+          <span class="eyebrow">YOUR COLLECTION</span>
+          <h2>Recent videos</h2>
+        </div>
+        <span id="historyCount" class="count-badge">0</span>
+      </div>
+
+      <div id="historyContainer" class="history-container">
+        <p class="history-empty">Your recent videos will appear here.</p>
+      </div>
+
+      <div class="sidebar-note">
+        <span>✦</span>
+        <p>Your watch history is saved in this browser.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand"><span class="brand-icon">▶</span> streamly</a>
+    <span>An independent video viewing interface.</span>
+  </footer>
+</body>
+</html>
